@@ -86,16 +86,19 @@ Run login tests only:
 ```bash
 pytest test_sign_in.py
 ```
+Run tests in parallel (2 workers) and generate Allure results
+```bash
+pytest -n 2 --alluredir=allure-results
+```
 
 ## Roadmap
 
 - [x] Registration tests
 - [x] Login tests
-- [ ] Password recovery tests
-- [ ] Profile settings tests
-- [ ] GitHub Actions CI
-- [ ] Allure reports
-- [ ] Parallel test execution
+- [x] Profile settings tests
+- [x] GitHub Actions CI
+- [x] Allure reports
+- [x] Parallel test execution
 
 ## Author
 
