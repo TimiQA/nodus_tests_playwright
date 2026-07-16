@@ -22,9 +22,14 @@ UI automation project for **Nodus Messenger** built with **Python**, **Playwrigh
 
 ```text
 .
+├── .github/
+│   └── workflows/
+│       └── playwright.yml
 ├── pages/
 │   ├── login_page.py
+│   ├── profile_page.py
 │   └── registration_page.py
+├── test_profile_settings.py
 ├── test_sign_in.py
 ├── test_sign_up.py
 ├── conftest.py
