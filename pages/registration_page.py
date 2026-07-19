@@ -44,7 +44,7 @@ class RegistrationPage:
 
     # Дальше идут методы open, click_sign_up_button и т.д.
     def open(self):
-         self.page.goto("https://web.nodlab.ru/")
+         self.page.goto("https://web.nodlab.ru/", timeout=60000, wait_until="domcontentloaded")
     def click_sign_up_button(self):
          self.sing_up.click() 
     def fill_form(self):
