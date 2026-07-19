@@ -3,7 +3,7 @@ import time # если time больше не нужен в этом файле,
 
 TRANSLATIONS = {
     "ru-RU": {
-        "sing_up": "Создать учётную запись",
+        "sign_up": "Создать учётную запись",
         "home_label": "Главная",
         "username": "Имя пользователя",
         "password": "Пароль",
@@ -13,7 +13,7 @@ TRANSLATIONS = {
         "next": "Продолжить"
     },
     "en-US": {
-        "sing_up": "Create Account",
+        "sign_up": "Create Account",
         "home_label": "Home",
         "username": "Username",
         "password": "Password",
@@ -32,11 +32,11 @@ class RegistrationPage:
         # Берем словарь только для нужного языка, чтобы не писать длинный путь каждый раз
         t = TRANSLATIONS[self.locale]
 
-        # Теперь локаторы выглядят аккуратно и легко читаются
+        
         self.username_input = page.get_by_placeholder(t["username"])
         self.password_input = page.get_by_placeholder(t["password"], exact=True)
         self.confirm_password_input = page.get_by_placeholder(t["confirm_password"], exact=True)
-        self.sing_up = page.get_by_text(t["sing_up"])
+        self.sing_up = page.get_by_role("link", name=t["sign_up"])
         self.submit_button = page.get_by_text(t["submit"])
         self.reg_token = page.get_by_placeholder(t["reg_token"])
         self.next_button = page.get_by_text(t["next"])

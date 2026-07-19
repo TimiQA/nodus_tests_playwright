@@ -7,7 +7,7 @@ def test_github_title(locale,page):
     registration_page.open()
     # 3. Наша старая проверка заголовка (оставляем как есть)
     assert "Element" in page.title()
-    page.wait_for_timeout(3000) # подождать 3000 миллисекунд (3 секунды)
+    #page.wait_for_timeout(3000) # подождать 3000 миллисекунд (3 секунды)
     # page.screenshot(path="before_click_error.png")
     registration_page.click_sign_up_button()
     registration_page.fill_form()
