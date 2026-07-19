@@ -23,7 +23,7 @@ class LoginPage:
         self.locale = locale
         t = TRANSLATIONS[self.locale]
 
-        self.username_input = page.get_by_placeholder(t["username"])
+        self.username_input = page.get_by_role("textbox", name=t["username"])
         self.password_input = page.get_by_placeholder(t["password"], exact=True)
         self.login_button = page.get_by_role("button", name=t["login_btn"])
         # Локаторы модалок безопасности
