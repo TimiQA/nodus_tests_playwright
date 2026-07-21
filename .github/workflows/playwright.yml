@@ -25,7 +25,7 @@ jobs:
       run: python -m playwright install --with-deps
       
     - name: Run tests (Parallel with Allure)
-      run: pytest -n 2 --alluredir=allure-results
+      run: pytest -n 2 --screenshot=only-on-failure --alluredir=allure-results
       
     - uses: actions/upload-artifact@v4
       if: always()
