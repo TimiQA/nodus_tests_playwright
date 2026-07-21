@@ -29,7 +29,6 @@ class RegistrationPage:
         self.page = page
         self.locale = locale
         
-        # Берем словарь только для нужного языка, чтобы не писать длинный путь каждый раз
         t = TRANSLATIONS[self.locale]
 
         
