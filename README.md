@@ -112,6 +112,6 @@ pytest -n 2 --alluredir=allure-results
 
 ##  Author
 
-**Artyom Berestov**
+**Artem Berestov**
 
 QA Automation Engineer | Python • Playwright • API Testing • CI/CD
