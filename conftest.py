@@ -1,4 +1,9 @@
 import pytest
+import os
+from dotenv import load_dotenv
+
+# Загружаем переменные окружения при старте тестов
+load_dotenv()
 
 @pytest.fixture(params=["ru-RU", "en-US"])
 def locale(request):
